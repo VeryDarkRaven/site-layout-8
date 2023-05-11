@@ -7,23 +7,79 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap&_v=20230511123111" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/style.min.css?_v=20230511123111">
+  <link rel="stylesheet" href="css/style.min.css">
   
   <title>Site layout 8</title>
 </head>
 
 <body>
+  <object type="image/svg+xml" data="img/icons/icons.svg" class="object__svg"></object>
 
   <header></header>
   <main>
   <section class="front">
-  <div class="container"></div>
+  <div class="front__decor">
+    <div class="decor__bg_1"></div>
+    <div class="decor__bg_2"></div>
+
+    <div class="container">
+      <div class="decor__image-container">
+        <svg class="decor__item_1">
+          <use xlink:href="img/icons/icons.svg#front--1"></use>
+        </svg>
+
+        <svg class="decor__item_2">
+          <use xlink:href="img/icons/icons.svg#front--2"></use>
+        </svg>
+
+        <svg class="decor__item_3">
+          <use xlink:href="img/icons/icons.svg#front--3"></use>
+        </svg>
+
+        <svg class="decor__item_4">
+          <use xlink:href="img/icons/icons.svg#front--4"></use>
+        </svg>
+
+        <svg class="decor__item_5">
+          <use xlink:href="img/icons/icons.svg#front--5"></use>
+        </svg>
+
+        <img src="img/front/1.png" alt="" class="decor__image">
+
+        <svg class="decor__item_6">
+          <use xlink:href="img/icons/icons.svg#front--6"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="container container_column-center">
+    <div class="front__text-block text-block">
+      <div class="front__subtitle subtitle">
+        <p>Online training</p>
+      </div>
+
+      <div class="front__title title">
+        <h1>25k+ students trust us</h1>
+      </div>
+
+      <div class="front__text text">
+        <p>Our goal is to make online education work for everyone</p>
+      </div>
+
+      <div class="front__buttons buttons">
+        <a href="#">Get Quote Now</a>
+
+        <a href="#">Learn More</a>
+      </div>
+    </div>
+  </div>
 </section>
 </main>
   <footer></footer>
 
-  <script src="js/app.min.js?_v=20230511123111"></script>
+  <script src="js/app.min.js"></script>
 </body>
 </html>
