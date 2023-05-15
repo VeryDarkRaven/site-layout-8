@@ -79,6 +79,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
@@ -308,3 +309,51 @@ body {
   }
 }
 /* end front style */
+/* advantages style */
+.advantages {
+  position: relative;
+  z-index: 1;
+  margin: -150px 0 0;
+}
+
+.advantages__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-rows: 1fr;
+  gap: 30px;
+}
+.advantages__cards .card {
+  padding: 35px 40px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  box-shadow: 0 6px 12px 3px rgba(0, 0, 0, 0.1);
+}
+.advantages__cards .card__icon {
+  width: 72px;
+  height: 72px;
+}
+.advantages__cards .card__icon svg {
+  width: inherit;
+  height: inherit;
+  max-width: inherit;
+  max-height: inherit;
+}
+.advantages__cards .card__title {
+  font-weight: 700;
+  font-size: 22px;
+}
+.advantages__cards .card__line {
+  background-color: #E74040;
+  width: 50px;
+  height: 2px;
+}
+
+@media (max-width: 350px) {
+  .advantages__cards {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+/* end advantages style */
