@@ -7,7 +7,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.min.css">
   
@@ -17,9 +17,29 @@
 <body>
   <object type="image/svg+xml" data="img/icons/icons.svg" class="object__svg"></object>
 
-  <header></header>
+  <header class="header header__bg_white" data-header-scroll-hidden>
+  <div class="container header__container">
+    <div class="header__logo"><a href="#">BrandName</a></div>
+
+    <nav class="header__nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__buttons buttons">
+      <a href="#">Login</a>
+      <a href="#" class="join">Join us <span>&#10132;</span></a>
+    </div>
+
+    <div class="header__burger header__burger_active"><span></span></div>
+  </div>
+</header>
   <main>
-  <section class="front">
+  <section class="front" data-parallax-container>
   <div class="front__decor">
     <div class="decor__bg_1"></div>
     <div class="decor__bg_2"></div>
