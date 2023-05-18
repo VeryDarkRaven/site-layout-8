@@ -17,13 +17,13 @@
 <body>
   <object type="image/svg+xml" data="img/icons/icons.svg" class="object__svg"></object>
 
-  <header class="header header__bg_white" data-header-scroll-hidden>
+  <header class="header header__bg_white" data-header-scroll-hidden="10" data-burger-parent>
   <div class="container header__container">
     <div class="header__logo"><a href="#">BrandName</a></div>
 
     <nav class="header__nav">
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="#" class="active">Home</a></li>
         <li><a href="#">Product</a></li>
         <li><a href="#">Pricing</a></li>
         <li><a href="#">Contact</a></li>
@@ -35,7 +35,7 @@
       <a href="#" class="join">Join us <span>&#10132;</span></a>
     </div>
 
-    <div class="header__burger header__burger_active"><span></span></div>
+    <div class="header__burger" data-burger><span></span></div>
   </div>
 </header>
   <main>
