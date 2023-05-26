@@ -96,6 +96,12 @@ body {
   justify-content: center;
 }
 
+.container_double-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
 .text-block {
   display: flex;
   flex-direction: column;
@@ -103,12 +109,19 @@ body {
   gap: 30px;
   line-height: 1.4;
 }
+.text-block .decor-line {
+  background-color: #E74040;
+  width: 70px;
+  height: 5px;
+}
 .text-block .subtitle {
   color: #96BB7C;
   font-weight: 800;
 }
-.text-block .title {
+.text-block .title h2 {
   color: #252B42;
+  font-size: 35px;
+  font-weight: 800;
 }
 .text-block .text {
   color: #737373;
@@ -425,6 +438,7 @@ body {
 }
 
 .front__title h1 {
+  color: #252B42;
   font-size: 42px;
   font-weight: 800;
   text-transform: uppercase;
@@ -626,6 +640,7 @@ body {
   max-height: inherit;
 }
 .advantages__cards .card__title {
+  color: #252B42;
   font-weight: 700;
   font-size: 22px;
 }
@@ -634,6 +649,10 @@ body {
   width: 50px;
   height: 2px;
 }
+.advantages__cards .card__text {
+  font-size: 14px;
+  line-height: 1.5;
+}
 
 @media (max-width: 350px) {
   .advantages__cards {
@@ -641,3 +660,55 @@ body {
   }
 }
 /* end advantages style */
+/* approdable style */
+.approdable__image-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.approdable__image-container svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.approdable__image-container img {
+  position: absolute;
+  object-fit: contain;
+}
+.approdable__image-container .image-1 {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.approdable__image-container .image-2 {
+  top: 100px;
+  left: 40px;
+  width: 116px;
+  height: 58px;
+}
+.approdable__image-container .image-3 {
+  top: 120px;
+  right: 30px;
+  width: 132px;
+  height: 130px;
+}
+.approdable__image-container .image-4 {
+  bottom: -5px;
+  left: 62px;
+  width: 156px;
+  height: 106px;
+}
+
+.approdable__text-block {
+  padding: 30px 0;
+}
+
+.approdable__right-block {
+  max-width: 340px;
+  justify-self: end;
+}
+
+/* end approdable style */
