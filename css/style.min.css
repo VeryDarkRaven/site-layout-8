@@ -133,15 +133,43 @@ body {
   flex-wrap: wrap;
 }
 .text-block .buttons a {
+  position: relative;
+  display: inline-block;
+  padding: 0 20px 0 0;
   color: #96BB7C;
   font-weight: 800;
   transition: background-color 1s ease 0s, border 1s ease 0s, color 1s ease 0s;
 }
+.text-block .buttons a::before, .text-block .buttons a::after {
+  content: "";
+  position: absolute;
+  background-color: #96BB7C;
+  width: 13px;
+  height: 2px;
+  transform-origin: left;
+  transition: background-color 1s ease 0s;
+}
+.text-block .buttons a::before {
+  top: 0;
+  right: 0;
+  transform: rotate(45deg);
+}
+.text-block .buttons a::after {
+  bottom: 0;
+  right: 0;
+  transform: rotate(-45deg);
+}
 .text-block .buttons a:hover {
   color: #a4d87f;
 }
+.text-block .buttons a:hover::before, .text-block .buttons a:hover::after {
+  background-color: #a4d87f;
+}
 .text-block .buttons a:active {
   color: #82b360;
+}
+.text-block .buttons a:active::before, .text-block .buttons a:active::after {
+  background-color: #82b360;
 }
 
 /* header style */
@@ -452,8 +480,11 @@ body {
 .front__buttons a {
   border: 1px solid #96BB7C;
   border-radius: 5px;
-  padding: 13px 30px;
+  padding: 13px 30px !important;
   font-size: 12px;
+}
+.front__buttons a::before, .front__buttons a::after {
+  display: none;
 }
 .front__buttons a:first-child {
   background-color: #96BB7C;
@@ -706,9 +737,32 @@ body {
   padding: 30px 0;
 }
 
-.approdable__right-block {
-  max-width: 340px;
-  justify-self: end;
+@media (max-width: 870px) {
+  .approdable__image-container .image-2 {
+    top: 100px;
+    left: -30px;
+  }
+  .approdable__image-container .image-3 {
+    top: 120px;
+    right: -30px;
+  }
+  .approdable__image-container .image-4 {
+    bottom: -5px;
+    left: 37px;
+  }
 }
-
+@media (min-width: 650px) {
+  .approdable__right-block {
+    max-width: 340px;
+    justify-self: end;
+  }
+}
+@media (max-width: 650px) {
+  .approdable__left-block {
+    display: none;
+  }
+  .approdable__container_double-block {
+    grid-template-columns: 1fr;
+  }
+}
 /* end approdable style */
