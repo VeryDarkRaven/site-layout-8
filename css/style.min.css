@@ -177,8 +177,7 @@ div[data-vp-container] {
   position: relative;
   display: flex;
   justify-content: center;
-  height: 100%;
-  min-width: 300px;
+  min-width: 245px;
 }
 div[data-vp-container] .video__container video {
   width: 100%;
@@ -1013,4 +1012,17 @@ div[data-vp-container] svg {
 }
 /* end approdable style */
 /* video section style */
+.video-section__right-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 700px) {
+  .video-section__container_double-block {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
 /* end video section style */
