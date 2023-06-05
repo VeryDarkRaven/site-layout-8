@@ -80,6 +80,19 @@ h1, h2, h3, h4, h5, h6 {
 body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #BDBDBD #F6FAFF;
+}
+body::-webkit-scrollbar {
+  width: 11px;
+}
+body::-webkit-scrollbar-track {
+  background: #F6FAFF;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #BDBDBD;
+  border-radius: 10px;
+  border: 3px solid #F6FAFF;
 }
 
 .container {
@@ -1032,7 +1045,7 @@ div[data-vp-container] svg {
 }
 
 .courses__text-block,
-.teachers__text-block {
+.testimonials__text-block {
   max-width: 470px;
   gap: 15px;
 }
@@ -1297,3 +1310,64 @@ div[data-vp-container] svg {
 }
 
 /* end testimonials style */
+/* newsletter style */
+.newsletter {
+  background-color: #FFF2F3;
+}
+.newsletter .container_column-center {
+  gap: 30px;
+}
+
+.newsletter__text-block .newsletter__subtitle {
+  font-size: 28px;
+  text-align: center;
+}
+
+.newsletter__form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 690px;
+  margin: 0 auto;
+}
+.newsletter__form input,
+.newsletter__form button {
+  border-radius: 5px;
+  padding: 15px 30px;
+  font-size: 14px;
+}
+.newsletter__form input {
+  flex: 1 1 auto;
+  background-color: #F9F9F9;
+  font-weight: 700;
+  border: 1px solid #BDBDBD;
+  border-right: none;
+}
+.newsletter__form input::placeholder {
+  color: #737373;
+}
+.newsletter__form button {
+  background-color: #96BB7C;
+  color: #fff;
+  border: 1px solid #96BB7C;
+}
+.newsletter__form button:hover {
+  background-color: #a4d87f;
+  border: 1px solid #a4d87f;
+}
+.newsletter__form button:active {
+  background-color: #82b360;
+  border: 1px solid #82b360;
+}
+
+@media (max-width: 470px) {
+  .newsletter__form {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .newsletter__form input,
+  .newsletter__form button {
+    width: 100%;
+  }
+}
+/* end newsletter style */
