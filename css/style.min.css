@@ -144,6 +144,7 @@ body {
 .text-block .buttons a::before, .text-block .buttons a::after {
   content: "";
   position: absolute;
+  right: -10px;
   background-color: #96BB7C;
   width: 13px;
   height: 2px;
@@ -152,12 +153,10 @@ body {
 }
 .text-block .buttons a::before {
   top: 0;
-  right: 0;
   transform: rotate(45deg);
 }
 .text-block .buttons a::after {
   bottom: 0;
-  right: 0;
   transform: rotate(-45deg);
 }
 .text-block .buttons a:hover {
@@ -746,7 +745,7 @@ div[data-vp-container] svg {
 .front__buttons a:hover {
   background-color: #a4d87f;
   border: 1px solid #a4d87f;
-  color: #fff;
+  color: #fff !important;
 }
 .front__buttons a:active {
   background-color: #82b360;
@@ -1026,3 +1025,205 @@ div[data-vp-container] svg {
   }
 }
 /* end video section style */
+/* courses style */
+.courses .container_column-center {
+  gap: 100px;
+}
+
+.courses__text-block {
+  max-width: 470px;
+}
+
+.courses__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-rows: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 20px;
+}
+.courses__items .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.courses__items .item__image-container {
+  position: relative;
+  flex: 0 0 300px;
+  width: 100%;
+}
+.courses__items .item__image {
+  width: 100%;
+  height: 100%;
+}
+.courses__items .item__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.courses__items .item__sale {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #E74040;
+  color: #fff;
+  padding: 5px 8px;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+.courses__items .item__actions {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.courses__items .item__actions button {
+  position: relative;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  transition: background-color 1s ease 0s;
+}
+.courses__items .item__actions button svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+}
+.courses__items .item__actions button:hover {
+  background-color: #a4d87f;
+}
+.courses__items .item__actions button::before {
+  content: "";
+  background-color: #96e45f;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  transition: width 0.5s ease 0s, height 0.5s ease 0s;
+}
+.courses__items .item__actions button.active::before {
+  width: 100%;
+  height: 100%;
+}
+.courses__items .item__text-container {
+  padding: 20px;
+  gap: 10px;
+}
+.courses__items .item__subtitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.courses__items .item__subtitle .subtitle__star-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: #000;
+  padding: 7px 8px;
+  border-radius: 20px 20px;
+}
+.courses__items .item__subtitle .star__icon {
+  position: relative;
+  width: 15px;
+  height: 15px;
+}
+.courses__items .item__subtitle .star__icon svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.courses__items .item__subtitle .star__text {
+  color: #fff;
+  line-height: 1;
+}
+.courses__items .item__title h2 {
+  font-size: 15px;
+}
+.courses__items .item__title h2 a {
+  color: #000;
+}
+.courses__items .item__text {
+  font-size: 13px;
+}
+.courses__items .item__sales-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.courses__items .item__sales-container .sales__icon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+.courses__items .item__sales-container .sales__icon svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.courses__items .item__sales-container .sales__text {
+  font-weight: 700;
+  font-size: 12px;
+  color: #737373;
+}
+.courses__items .item__prices {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+}
+.courses__items .item__prices .prices__text_old {
+  color: #BDBDBD;
+}
+.courses__items .item__prices .prices__text_new {
+  color: #FFAB71;
+}
+.courses__items .item__button-container .button {
+  border-radius: 20px;
+  border: 1px solid #96BB7C;
+  padding: 10px 25px;
+  transition: background-color 1s ease 0s;
+}
+.courses__items .item__button-container .button:hover {
+  background-color: #a4d87f;
+  border: 1px solid #a4d87f;
+}
+.courses__items .item__button-container .button:hover a {
+  color: #fff !important;
+}
+.courses__items .item__button-container .button:hover a::before, .courses__items .item__button-container .button:hover a::after {
+  background-color: #fff;
+}
+.courses__items .item__button-container .button:active {
+  background-color: #82b360;
+  border: 1px solid #82b360;
+}
+
+/* end courses style */
