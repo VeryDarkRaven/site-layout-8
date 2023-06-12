@@ -7,15 +7,25 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap&_v=20230609132526" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/style.min.css?_v=20230609132526">
+  <link rel="stylesheet" href="css/style.min.css">
   
   <title>Site layout 8</title>
 </head>
 
-<body>
+<body class="lock">
   <object type="image/svg+xml" data="img/icons/icons.svg" class="object__svg"></object>
+
+  <div class="preloader__screen" data-prldr-screen data-prldr-wh>
+  <div class="preloader__container">
+    <div class="preloader"></div>
+
+    <div class="preloader__percent">
+      <p><span class="percent" data-prldr-percent>0</span><span>%</span></p>
+    </div>
+  </div>
+</div>
 
   <header class="header header__bg_white" data-header-scroll-hidden="10" data-burger-parent>
   <div class="container header__container">
@@ -66,7 +76,7 @@
           <use xlink:href="img/icons/icons.svg#front--5"></use>
         </svg>
 
-        <img loading="lazy" src="img/front/1.webp" alt="" class="decor__image">
+        <img loading="lazy" src="img/front/1.png" alt="" class="decor__image">
 
         <svg class="decor__item_6 decor__item" data-mprlx data-mprlx-cof="8">
           <use xlink:href="img/icons/icons.svg#front--6"></use>
@@ -153,10 +163,10 @@
             <use xlink:href="img/icons/icons.svg#approdable--1"></use>
           </svg>
 
-          <img loading="lazy" src="img/approdable/1.webp" alt="" class="image-1">
-          <img loading="lazy" src="img/approdable/2.webp" alt="" class="image-2" data-mprlx data-mprlx-cof="8">
-          <img loading="lazy" src="img/approdable/3.webp" alt="" class="image-3" data-mprlx>
-          <img loading="lazy" src="img/approdable/4.webp" alt="" class="image-4" data-mprlx data-mprlx-cof="8">
+           <img loading="lazy" src="img/approdable/1.png" alt="" class="image-1">
+           <img loading="lazy" src="img/approdable/2.png" alt="" class="image-2" data-mprlx data-mprlx-cof="8">
+           <img loading="lazy" src="img/approdable/3.png" alt="" class="image-3" data-mprlx>
+           <img loading="lazy" src="img/approdable/4.png" alt="" class="image-4" data-mprlx data-mprlx-cof="8">
         </div>
       </div>
 
@@ -202,7 +212,7 @@
       <div class="video-section__right-block right-block">
         <div class="video-section__player-container" data-vp-container>
           <div class="video__container">
-            <video loading="lazy" src="files/video/1.mp4" data-vp-video></video>
+            <video src="files/video/1.mp4" data-vp-video></video>
           </div>
 
           <div class="video__control-container">
@@ -292,7 +302,7 @@
       <article class="item">
         <div class="item__image-container">
           <div class="item__image">
-            <img loading="lazy" src="img/courses/1.webp" alt="">
+             <img loading="lazy" src="img/courses/1.png" alt="">
           </div>
 
           <div class="item__sale">
@@ -376,7 +386,7 @@
       <article class="item">
         <div class="item__image-container">
           <div class="item__image">
-            <img loading="lazy" src="img/courses/2.webp" alt="">
+             <img loading="lazy" src="img/courses/2.png" alt="">
           </div>
 
           <div class="item__sale">
@@ -460,7 +470,7 @@
       <article class="item">
         <div class="item__image-container">
           <div class="item__image">
-            <img loading="lazy" src="img/courses/3.webp" alt="">
+             <img loading="lazy" src="img/courses/3.png" alt="">
           </div>
 
           <div class="item__sale">
@@ -544,7 +554,7 @@
       <article class="item">
         <div class="item__image-container">
           <div class="item__image">
-            <img loading="lazy" src="img/courses/4.webp" alt="">
+             <img loading="lazy" src="img/courses/4.png" alt="">
           </div>
 
           <div class="item__sale">
@@ -646,7 +656,7 @@
     <div class="testimonials__items">
       <div class="item">
         <div class="item__image-container">
-          <img loading="lazy" src="img/testimonials/1.webp" alt="">
+           <img loading="lazy" src="img/testimonials/1.png" alt="">
         </div>
 
         <div class="item__text">
@@ -696,7 +706,7 @@
 
       <div class="item">
         <div class="item__image-container">
-          <img loading="lazy" src="img/testimonials/2.webp" alt="">
+           <img loading="lazy" src="img/testimonials/2.png" alt="">
         </div>
 
         <div class="item__text">
@@ -855,6 +865,6 @@
   </div>
 </footer>
 
-  <script src="js/app.min.js?_v=20230609132526"></script>
+  <script src="js/app.min.js"></script>
 </body>
 </html>
