@@ -737,7 +737,7 @@ div[data-vp-container] svg {
 }
 
 .header__container {
-  padding: 20px 0;
+  padding: 20px 0 !important;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto 40px auto 40px 49%;
